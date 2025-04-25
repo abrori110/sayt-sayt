@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protected Link</title>
+    <script>
+        function checkCode() {
+            var code = document.getElementById("accessCode").value;
+            if (code === "4444") {
+                window.location.href = "https://drive.google.com/file/d/1D9nZEKk-FdPEMCMs59EAb6m8JtgryBnf/view?usp=sharing";
+            } else {
+                alert("Noto‘g‘ri kod. Iltimos, qayta urinib ko‘ring.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Google Drive faylga kirish uchun kodni kiriting:</h2>
+    <input type="password" id="accessCode" placeholder="Kodni kiriting">
+    <button onclick="checkCode()">Kirish</button>
+</body>
+</html>
